@@ -454,23 +454,25 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="form-area">
-                        <br style="clear:both">
-                        <h3 style="margin-bottom: 25px; text-align: center;">Formulário de Contato</h3>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Assunto">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nome">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Escreva sua mensagem aqui..." class="form-control message" maxlength="140" rows="7" id="message"></textarea
-                                <span class="help-block"><p id="characterLeft" class="help-block "></p></span>
-                        </div>
+                        <form method="post" action="php/send.php">
+                            <br style="clear:both">
+                            <h3 style="margin-bottom: 25px; text-align: center;">Formulário de Contato</h3>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Escreva sua mensagem aqui..." class="form-control message" rows="7" name="message"></textarea
+                                    <span class="help-block"><p id="characterLeft" class="help-block "></p></span>
+                            </div>
 
-                        <input id="btnSubmit" class="btn btn-primary pull-right" type="submit" value="Enviar">
+                            <input id="btnSubmit" class="btn btn-primary pull-right" type="submit" value="Enviar">
+                        </form>
                     </div>
                 </div>
                 <div class="col-md-7">
