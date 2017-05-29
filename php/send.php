@@ -17,7 +17,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
 
 $mail->setFrom('catgranbery@gmail.com', 'CAT 2017');
-$mail->addAddress('assessoria.projetos.si1gc@gmail.com', 'Eduardo Brito');     // Add a recipient
+$mail->addAddress('cat@granbery.edu.br');     // Add a recipient
 $mail->addAddress('catgranbery@gmail.com');               // Name is optional
 
 $mail->isHTML(true);                                  // Set email format to HTML
