@@ -1,6 +1,6 @@
-<php include 'base.html'?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,18 +13,20 @@
     <link href="bundles/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="bundles/css/creative.css" rel="stylesheet">
     <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
+        .navbar-toggler {
+            z-index: 1;
         }
-    }
+        
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
     </style>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <?php $url = "http://" . $_SERVER['HTTP_HOST'] ."/cat"?>
+        <link rel="icon" type="image/x-icon" href="<?php echo $url ?>/bundles/img/favicon.ico">
 </head>
+
 <body id="page-top">
     <header class="masthead">
         <div class="header-content">
@@ -35,23 +37,24 @@
     </header>
     <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="container" >
+        <div class="container">
             <a class="navbar-brand" href="#page-top"><img width="150" height="auto" src="bundles/img/bannercat2.png"></a>
             <div class="collapse navbar-collapse" id="navbarExample">
-                <p class="title-img text-center">III Congresso de Administração e Tecnologia<br><span style="font-size: 11px">ISSN: 2525-7617</span></p>
+                <p class="title-img text-center">III Congresso de Administração e Tecnologia
+                    <br><span style="font-size: 11px">ISSN: 2525-7617</span></p>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#about">Sobre</a>
                     </li>
-                <!--<li class="nav-item">
-                        <a class="nav-link"  href="cronogram.html">Cronograma</a>
+                    <!--<li class="nav-item">
+                        <a class="nav-link"  href="cronogram.php">Cronograma</a>
                     </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#info">Informações</a>
                     </li>
-                <!--<li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="#speakers">Palestrantes</a>
                     </li> -->
                     <li class="nav-item">
@@ -61,7 +64,7 @@
                         <a class="nav-link" href="#contact">Contato</a>
                     </li>
                 </ul>
-        </div>
+            </div>
         </div>
     </nav>
     <section class="bg-primary" id="about">
@@ -74,10 +77,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
-                                <a class="col-12 btn btn-default btn-xl sr-button disabled" style="margin-top: 10px" href="cronogram.html">Cronograma</a>
+                                <a class="col-12 btn btn-default btn-xl sr-button disabled" style="margin-top: 10px" href="cronogram.php">Cronograma</a>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <a class="col-12 btn btn-default btn-xl sr-button disabled" style="margin-top: 10px" href="">Anais</a>
+                                <a class="col-12 btn btn-default btn-xl sr-button" style="margin-top: 10px" href="http://periodicosfmg.granbery.edu.br/index.php/CAT">Anais</a>
                             </div>
                         </div>
                     </div>
@@ -137,7 +140,8 @@
                 </div>
             </div>
         </div>
-        <br><br>
+        <br>
+        <br>
         <div class="jumbotron" style="margin-bottom: 0px;">
             <div class="container">
                 <div class="row">
@@ -197,7 +201,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
-                                <a class="col-12 btn btn-default btn-xl sr-button" style="margin-top: 10px" href="submission.html">Submissão de Artigos</a>
+                                <a class="col-12 btn btn-default btn-xl sr-button" style="margin-top: 10px" href="submission.php">Submissão de Artigos</a>
                             </div>
                             <div class="col-md-6 col-sm-12">
                                 <a class="col-12 btn btn-default btn-xl sr-button" style="margin-top: 10px" href="https://www.eventbrite.com.br/e/congresso-de-administracao-e-tecnologia-tickets-26214836281">Inscrição para o Congresso</a>
@@ -210,7 +214,7 @@
         </div>
     </section>
 
-<!-- {#<section id="speakers">#}
+    <!-- {#<section id="speakers">#}
 {#<div class="container">#}
 {#<div class="row">#}
 {#<div class="col">#}
@@ -467,8 +471,9 @@
                                 <input type="email" name="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <textarea placeholder="Escreva sua mensagem aqui..." class="form-control message" rows="7" name="message"></textarea
-                                    <span class="help-block"><p id="characterLeft" class="help-block "></p></span>
+                                <textarea placeholder="Escreva sua mensagem aqui..." class="form-control message" rows="7" name="message"></textarea <span class="help-block">
+                                <p id="characterLeft" class="help-block "></p>
+                                </span>
                             </div>
 
                             <input id="btnSubmit" class="btn btn-primary pull-right" type="submit" value="Enviar">
@@ -500,6 +505,8 @@
         </div>
     </div>
 </body>
+
+</html>
 <!-- Bootstrap core JavaScript -->
 <script src="bundles/jquery/jquery.min.js"></script>
 <script src="bundles/tether/tether.min.js"></script>
@@ -511,49 +518,51 @@
 <script src="bundles/magnific-popup/jquery.magnific-popup.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="bundles/js/creative.min.js"></script>
-<script>$( document ).ready(function() {
+<script>
+    $(document).ready(function () {
 
-    pageSize = 1;
-    pagesCount = $(".content-page").length;
-    var currentPage = 1;
+        pageSize = 1;
+        pagesCount = $(".content-page").length;
+        var currentPage = 1;
 
-    /////////// PREPARE NAV ///////////////
-    var nav = '';
-    var totalPages = Math.ceil(pagesCount / pageSize);
-    for (var s=0; s<totalPages; s++){
-        nav += '<li class="page-item numeros"><a class="page-link" href="#portfolio">'+(s+1)+'</a></li>';
-    }
-    $(".pag_prev").after(nav);
-    $(".numeros").first().addClass("active");
-    //////////////////////////////////////
+        /////////// PREPARE NAV ///////////////
+        var nav = '';
+        var totalPages = Math.ceil(pagesCount / pageSize);
+        for (var s = 0; s < totalPages; s++) {
+            nav += '<li class="page-item numeros"><a class="page-link" href="#portfolio">' + (s + 1) + '</a></li>';
+        }
+        $(".pag_prev").after(nav);
+        $(".numeros").first().addClass("active");
+        //////////////////////////////////////
 
-    showPage = function() {
-        $(".content-page").hide().each(function(n) {
-            if (n >= pageSize * (currentPage - 1) && n < pageSize * currentPage)
-            $(this).show();
+        showPage = function () {
+            $(".content-page").hide().each(function (n) {
+                if (n >= pageSize * (currentPage - 1) && n < pageSize * currentPage)
+                    $(this).show();
+            });
+        }
+        showPage();
+
+
+        $(".pagination li.numeros").click(function () {
+            $(".pagination li").removeClass("active");
+            $(this).addClass("active");
+            currentPage = parseInt($(this).text());
+            showPage();
         });
-    }
-    showPage();
 
+        $(".pagination li.pag_prev").click(function () {
+            if ($(this).next().is('.active')) return;
+            $('.numeros.active').removeClass('active').prev().addClass('active');
+            currentPage = currentPage > 1 ? (currentPage - 1) : 1;
+            showPage();
+        });
 
-    $(".pagination li.numeros").click(function() {
-        $(".pagination li").removeClass("active");
-        $(this).addClass("active");
-        currentPage = parseInt($(this).text());
-        showPage();
+        $(".pagination li.pag_next").click(function () {
+            if ($(this).prev().is('.active')) return;
+            $('.numeros.active').removeClass('active').next().addClass('active');
+            currentPage = currentPage < totalPages ? (currentPage + 1) : totalPages;
+            showPage();
+        });
     });
-
-    $(".pagination li.pag_prev").click(function() {
-        if($(this).next().is('.active')) return;
-        $('.numeros.active').removeClass('active').prev().addClass('active');
-        currentPage = currentPage > 1 ? (currentPage-1) : 1;
-        showPage();
-    });
-
-    $(".pagination li.pag_next").click(function() {
-        if($(this).prev().is('.active')) return;
-        $('.numeros.active').removeClass('active').next().addClass('active');
-        currentPage = currentPage < totalPages ? (currentPage+1) : totalPages;
-        showPage();
-    });
-});</script>
+</script>

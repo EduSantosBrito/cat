@@ -591,48 +591,55 @@ body{background-color:#fff}.logo a:hover,.logo a:focus{color:#859bb1 !important}
 $mail->send();
 
 ?>
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Enviando</title>
-		<meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
-		<meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="../bundles/css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="../bundles/css/effect1.css" />
-		<script src="../bundles/js/modernizr.custom.js"></script>
-	</head>
-	<body class="demo-1">
-        <img width="150" height="auto" src="../bundles/img/bannercat2.png">
-		<div id="ip-container" class="ip-container">
-			<!-- initial header -->
-			<header class="ip-header">
+    <!DOCTYPE html>
+    <html lang="en" class="no-js">
 
-				<div class="ip-loader">
-					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
-						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-					</svg>
-				</div>
-			</header>
-			<!-- main content -->
-			<div class="ip-main">
-				<h2>Mensagem enviada!</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Enviando</title>
+        <meta name="description" content="Page Preloading Effect: Re-creating the effect seen on fontface.ninja" />
+        <meta name="keywords" content="page loading, effect, initial, logo, sliding, web design, css animation, transform" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="../bundles/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../bundles/css/effect1.css" />
+        <script src="../bundles/js/modernizr.custom.js"></script>
+        <?php $url = "http://" . $_SERVER['HTTP_HOST'] ."/cat"?>
+            <link rel="icon" type="image/x-icon" href="<?php echo $url ?>/bundles/img/favicon.ico">
+    </head>
+
+    <body class="demo-1">
+        <img width="150" height="auto" src="../bundles/img/bannercat2.png">
+        <div id="ip-container" class="ip-container">
+            <!-- initial header -->
+            <header class="ip-header">
+
+                <div class="ip-loader">
+                    <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+                        <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                        <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z" />
+                    </svg>
+                </div>
+            </header>
+            <!-- main content -->
+            <div class="ip-main">
+                <h2>Mensagem enviada!</h2>
                 <h3>Em breve retornaremos.</h3>
 
-			</div>
-		</div><!-- /container -->
-		<script src="../bundles/js/classie.js"></script>
-		<script src="../bundles/js/pathLoader.js"></script>
-		<script src="../bundles/js/main.js"></script>
+            </div>
+        </div>
+        <!-- /container -->
+        <script src="../bundles/js/classie.js"></script>
+        <script src="../bundles/js/pathLoader.js"></script>
+        <script src="../bundles/js/main.js"></script>
         <script>
-
-        var delay = 5000;
-        setTimeout(function(){  window.location.href = "/cat";  }, delay);
+            var delay = 5000;
+            setTimeout(function () {
+                window.location.href = "/cat";
+            }, delay);
         </script>
-	</body>
-</html>
+    </body>
+
+    </html>
