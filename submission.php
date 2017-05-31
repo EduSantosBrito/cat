@@ -23,7 +23,7 @@
             }
         }
     </style>
-    <?php $url = "http://" . $_SERVER['HTTP_HOST'] ."/cat"?>
+    <?php $url = "http://" . $_SERVER['HTTP_HOST'] ?>
         <link rel="icon" type="image/x-icon" href="<?php echo $url ?>/bundles/img/favicon.ico">
 </head>
 

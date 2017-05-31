@@ -23,7 +23,7 @@
             }
         }
     </style>
-    <?php $url = "http://" . $_SERVER['HTTP_HOST'] ."/cat"?>
+    <?php $url = "http://" . $_SERVER['HTTP_HOST'] ?>
         <link rel="icon" type="image/x-icon" href="<?php echo $url ?>/bundles/img/favicon.ico">
 </head>
 
@@ -73,7 +73,7 @@
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <h2 class="section-heading text-white">Congresso de Administração e Tecnologia</h2>
                     <hr class="light">
-                    <p class="text-faded">O CAT é um evento científico de abrangência nacional que promoverá em 2016 a sua segunda versão. O objetivo é de oferecer à comunidade acadêmica uma excelente oportunidade de publicação de trabalhos e troca de experiências científicas, estabelecendo-se como um referencial na área de Gestão e Tecnologia. O evento será realizado pela Faculdade Metodista Granbery, com o apoio da Granbery Consultoria. Em 2016 os artigos (categorias oral e pôster) serão publicados por meio do sistema eletrônico de editoração de revistas (SEER). Participe e envie seu artigo.</p>
+                    <p class="text-faded">O CAT é um evento científico de abrangência nacional que promoverá em 2017 a sua terceira versão. O objetivo é de oferecer à comunidade acadêmica uma excelente oportunidade de publicação de trabalhos e troca de experiências científicas, estabelecendo-se como um referencial na área de Gestão e Tecnologia. O evento será realizado pelo Instituto Metodista Granbery, com o apoio da Granbery Consultoria. Em 2017 os artigos (categorias oral e pôster) serão publicados por meio do sistema eletrônico de editoração de revistas (SEER). Participe e envie seu artigo.</p>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
@@ -204,7 +204,7 @@
                                 <a class="col-12 btn btn-default btn-xl sr-button" style="margin-top: 10px" href="submission.php">Submissão de Artigos</a>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                <a class="col-12 btn btn-default btn-xl sr-button" style="margin-top: 10px" href="https://www.eventbrite.com.br/e/congresso-de-administracao-e-tecnologia-tickets-26214836281">Inscrição para o Congresso</a>
+                                <a class="col-12 btn btn-default btn-xl sr-button disabled" style="margin-top: 10px" href="https://www.eventbrite.com.br/e/congresso-de-administracao-e-tecnologia-tickets-26214836281">Inscrição para o Congresso</a>
                             </div>
                         </div>
                     </div>
@@ -484,13 +484,13 @@
                     <div class="col-md-12">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5240.197217260528!2d-43.34661296611172!3d-21.765588546867107!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xccaab1c690642b25!2sInstituto+Metodista+Granbery!5e0!3m2!1spt-BR!2sbr!4v1492303150845" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-
                     <div class="col-md-4 offset-md-4 text-center">
                         <h3>VENHA ATÉ NÓS</h3>
                         <address>
                             <p><strong>FACULDADE METODISTA GRANBERY</strong></p>
                             <p>Telefone: (32) 2101-1800</p>
                         </address>
+						<a href="http://granbery.edu.br"><img width="128" height="auto" src="bundles/img/logo-granbery.png"></a>
                     </div>
                 </div>
             </div>
